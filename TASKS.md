@@ -248,7 +248,7 @@ Exact functional commands, fixtures and paths must be ratified in the execution 
 
 ## W3-T2 — Implement proposed design changes
 
-**Wave:** W3 · **Prerequisites:** W2-T1, W2-T2
+**Wave:** W3 · **Prerequisites:** W2-T1, W2-T2, W3-T1
 
 Allow a human or agent to propose typed changes and inspect affected artifacts.
 
@@ -344,7 +344,7 @@ Exact functional commands, fixtures and paths must be ratified in the execution 
 
 ## W4-T2 — Prepare and document a physical prototype
 
-**Wave:** W4 · **Prerequisites:** W3-T1, W3-T2
+**Wave:** W4 · **Prerequisites:** W3-T1, W3-T2, W4-T1
 
 Produce reviewed build files and a test procedure; fabricate only with separately authorized resources.
 
@@ -440,7 +440,7 @@ Exact functional commands, fixtures and paths must be ratified in the execution 
 
 ## W5-T2 — Build review and component contribution flows
 
-**Wave:** W5 · **Prerequisites:** W4-T1, W4-T2
+**Wave:** W5 · **Prerequisites:** W4-T1, W4-T2, W5-T1
 
 Define how contributors propose parts, measurements and design variants.
 
@@ -536,7 +536,7 @@ This task uses the saved reproducible manual protocol. Distinguish paper/synthet
 
 ## W6-T2 — Publish supported workflows and adapter conformance
 
-**Wave:** W6 · **Prerequisites:** W5-T1, W5-T2
+**Wave:** W6 · **Prerequisites:** W5-T1, W5-T2, W6-T1
 
 Define the first maintained tool versions, checks and contribution boundaries.
 
