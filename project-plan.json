@@ -1,0 +1,251 @@
+{
+  "name": "Matter Commons",
+  "slug": "matter-commons",
+  "stage": "Planning only — no product implementation",
+  "waves": [
+    {
+      "id": "W1",
+      "title": "One physical design with explicit requirements",
+      "outcome": "Define a bounded reference device and its assumptions.",
+      "taskIds": [
+        "W1-T1",
+        "W1-T2"
+      ]
+    },
+    {
+      "id": "W2",
+      "title": "Connect established engineering tools",
+      "outcome": "Create the first editable cross-discipline package.",
+      "taskIds": [
+        "W2-T1",
+        "W2-T2"
+      ]
+    },
+    {
+      "id": "W3",
+      "title": "Prove one useful engineering check",
+      "outcome": "Make changes reviewable across the package.",
+      "taskIds": [
+        "W3-T1",
+        "W3-T2"
+      ]
+    },
+    {
+      "id": "W4",
+      "title": "From model to measured prototype",
+      "outcome": "Connect analysis with real-world evidence.",
+      "taskIds": [
+        "W4-T1",
+        "W4-T2"
+      ]
+    },
+    {
+      "id": "W5",
+      "title": "A community can reproduce the design",
+      "outcome": "Make collaboration and portability dependable.",
+      "taskIds": [
+        "W5-T1",
+        "W5-T2"
+      ]
+    },
+    {
+      "id": "W6",
+      "title": "An engineering ecosystem people can trust",
+      "outcome": "Validate reproducibility and operator effort.",
+      "taskIds": [
+        "W6-T1",
+        "W6-T2"
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "W1-T1",
+      "wave": "W1",
+      "title": "Specify the environmental sensor reference",
+      "goal": "Document purpose, dimensions, interfaces, power and environmental assumptions.",
+      "acceptanceCriteria": [
+        "Each requirement has a measurable check or is explicitly marked unresolved.",
+        "The reference excludes regulated or safety-critical use and identifies needed physical tests."
+      ],
+      "dependencies": [],
+      "status": "PLANNED",
+      "body": "Document purpose, dimensions, interfaces, power and environmental assumptions.\n\nStart only after the listed prerequisites and scope are accepted by a maintainer. Work in the project's own repository. Document assumptions, unresolved questions and reproducible evidence. This is a proposed work package, not a claim that the implementation already exists."
+    },
+    {
+      "id": "W1-T2",
+      "wave": "W1",
+      "title": "Model units, tolerances and design lineage",
+      "goal": "Define shared identifiers and constraints across enclosure, board and BOM.",
+      "acceptanceCriteria": [
+        "A unit mismatch and a conflicting clearance requirement are detected in fixtures.",
+        "Every critical dimension links to its requirement or stated assumption."
+      ],
+      "dependencies": [
+        "W1-T1"
+      ],
+      "status": "PLANNED",
+      "body": "Define shared identifiers and constraints across enclosure, board and BOM.\n\nStart only after the listed prerequisites and scope are accepted by a maintainer. Work in the project's own repository. Document assumptions, unresolved questions and reproducible evidence. This is a proposed work package, not a claim that the implementation already exists."
+    },
+    {
+      "id": "W2-T1",
+      "wave": "W2",
+      "title": "Build the mechanical design adapter",
+      "goal": "Integrate a bounded parametric enclosure through an established open CAD tool.",
+      "acceptanceCriteria": [
+        "Changing a declared dimension regenerates editable geometry and drawings.",
+        "Unsupported geometry operations fail without replacing the source with an opaque render."
+      ],
+      "dependencies": [
+        "W1-T1",
+        "W1-T2"
+      ],
+      "status": "PLANNED",
+      "body": "Integrate a bounded parametric enclosure through an established open CAD tool.\n\nStart only after the listed prerequisites and scope are accepted by a maintainer. Work in the project's own repository. Document assumptions, unresolved questions and reproducible evidence. This is a proposed work package, not a claim that the implementation already exists."
+    },
+    {
+      "id": "W2-T2",
+      "wave": "W2",
+      "title": "Build the board and BOM adapter",
+      "goal": "Link circuit components, board outline and bill of materials using an open electronics tool.",
+      "acceptanceCriteria": [
+        "Component identifiers remain consistent across schematic, board and BOM.",
+        "A missing or incompatible component is visible before export."
+      ],
+      "dependencies": [
+        "W1-T1",
+        "W1-T2"
+      ],
+      "status": "PLANNED",
+      "body": "Link circuit components, board outline and bill of materials using an open electronics tool.\n\nStart only after the listed prerequisites and scope are accepted by a maintainer. Work in the project's own repository. Document assumptions, unresolved questions and reproducible evidence. This is a proposed work package, not a claim that the implementation already exists."
+    },
+    {
+      "id": "W3-T1",
+      "wave": "W3",
+      "title": "Implement board-to-case fit verification",
+      "goal": "Check the bounded mechanical envelope, holes and clearance constraints.",
+      "acceptanceCriteria": [
+        "A deliberately oversized board or displaced hole fails the check.",
+        "Results disclose tolerances and what geometry is not covered."
+      ],
+      "dependencies": [
+        "W2-T1",
+        "W2-T2"
+      ],
+      "status": "PLANNED",
+      "body": "Check the bounded mechanical envelope, holes and clearance constraints.\n\nStart only after the listed prerequisites and scope are accepted by a maintainer. Work in the project's own repository. Document assumptions, unresolved questions and reproducible evidence. This is a proposed work package, not a claim that the implementation already exists."
+    },
+    {
+      "id": "W3-T2",
+      "wave": "W3",
+      "title": "Implement proposed design changes",
+      "goal": "Allow a human or agent to propose typed changes and inspect affected artifacts.",
+      "acceptanceCriteria": [
+        "A reviewer sees which dimensions, components, drawings and costs may change.",
+        "Rejected changes leave the accepted design package intact."
+      ],
+      "dependencies": [
+        "W2-T1",
+        "W2-T2"
+      ],
+      "status": "PLANNED",
+      "body": "Allow a human or agent to propose typed changes and inspect affected artifacts.\n\nStart only after the listed prerequisites and scope are accepted by a maintainer. Work in the project's own repository. Document assumptions, unresolved questions and reproducible evidence. This is a proposed work package, not a claim that the implementation already exists."
+    },
+    {
+      "id": "W4-T1",
+      "wave": "W4",
+      "title": "Add a bounded simulation recipe",
+      "goal": "Choose one useful supported analysis and document its assumptions and solver limits.",
+      "acceptanceCriteria": [
+        "The recipe includes a reference case with a known expected result.",
+        "Reports separate simulated estimates from measured physical performance."
+      ],
+      "dependencies": [
+        "W3-T1",
+        "W3-T2"
+      ],
+      "status": "PLANNED",
+      "body": "Choose one useful supported analysis and document its assumptions and solver limits.\n\nStart only after the listed prerequisites and scope are accepted by a maintainer. Work in the project's own repository. Document assumptions, unresolved questions and reproducible evidence. This is a proposed work package, not a claim that the implementation already exists."
+    },
+    {
+      "id": "W4-T2",
+      "wave": "W4",
+      "title": "Prepare and document a physical prototype",
+      "goal": "Produce reviewed build files and a test procedure; fabricate only with separately authorized resources.",
+      "acceptanceCriteria": [
+        "Build outputs include versioned drawings, BOM and assembly notes.",
+        "Any physical results name the actual revision, equipment and observed limitations."
+      ],
+      "dependencies": [
+        "W3-T1",
+        "W3-T2"
+      ],
+      "status": "PLANNED",
+      "body": "Produce reviewed build files and a test procedure; fabricate only with separately authorized resources.\n\nStart only after the listed prerequisites and scope are accepted by a maintainer. Work in the project's own repository. Document assumptions, unresolved questions and reproducible evidence. This is a proposed work package, not a claim that the implementation already exists."
+    },
+    {
+      "id": "W5-T1",
+      "wave": "W5",
+      "title": "Publish the open design package format",
+      "goal": "Export requirements, sources, constraints, adapters and licensing metadata.",
+      "acceptanceCriteria": [
+        "Another contributor reopens and edits the reference design without private files.",
+        "Missing tool versions or components are diagnosed clearly."
+      ],
+      "dependencies": [
+        "W4-T1",
+        "W4-T2"
+      ],
+      "status": "PLANNED",
+      "body": "Export requirements, sources, constraints, adapters and licensing metadata.\n\nStart only after the listed prerequisites and scope are accepted by a maintainer. Work in the project's own repository. Document assumptions, unresolved questions and reproducible evidence. This is a proposed work package, not a claim that the implementation already exists."
+    },
+    {
+      "id": "W5-T2",
+      "wave": "W5",
+      "title": "Build review and component contribution flows",
+      "goal": "Define how contributors propose parts, measurements and design variants.",
+      "acceptanceCriteria": [
+        "A component record distinguishes datasheet claims from community measurements.",
+        "Review preserves attribution and prevents incompatible licenses from being silently combined."
+      ],
+      "dependencies": [
+        "W4-T1",
+        "W4-T2"
+      ],
+      "status": "PLANNED",
+      "body": "Define how contributors propose parts, measurements and design variants.\n\nStart only after the listed prerequisites and scope are accepted by a maintainer. Work in the project's own repository. Document assumptions, unresolved questions and reproducible evidence. This is a proposed work package, not a claim that the implementation already exists."
+    },
+    {
+      "id": "W6-T1",
+      "wave": "W6",
+      "title": "Run independent reproduction exercises",
+      "goal": "Invite volunteer teams to reproduce the model and, where resourced, the physical check.",
+      "acceptanceCriteria": [
+        "Report discrepancies and failed reproductions alongside successful ones.",
+        "Update requirements or adapters using measured findings."
+      ],
+      "dependencies": [
+        "W5-T1",
+        "W5-T2"
+      ],
+      "status": "PLANNED",
+      "body": "Invite volunteer teams to reproduce the model and, where resourced, the physical check.\n\nStart only after the listed prerequisites and scope are accepted by a maintainer. Work in the project's own repository. Document assumptions, unresolved questions and reproducible evidence. This is a proposed work package, not a claim that the implementation already exists."
+    },
+    {
+      "id": "W6-T2",
+      "wave": "W6",
+      "title": "Publish supported workflows and adapter conformance",
+      "goal": "Define the first maintained tool versions, checks and contribution boundaries.",
+      "acceptanceCriteria": [
+        "A second design exercises the same adapters without custom core changes.",
+        "Support claims state geometry, electronics and simulation limits explicitly."
+      ],
+      "dependencies": [
+        "W5-T1",
+        "W5-T2"
+      ],
+      "status": "PLANNED",
+      "body": "Define the first maintained tool versions, checks and contribution boundaries.\n\nStart only after the listed prerequisites and scope are accepted by a maintainer. Work in the project's own repository. Document assumptions, unresolved questions and reproducible evidence. This is a proposed work package, not a claim that the implementation already exists."
+    }
+  ]
+}
