@@ -1,0 +1,723 @@
+{
+  "project": "matter-commons",
+  "schema": "maintainer-authored-contract-v1",
+  "platformEnforcement": "Not claimed by this document; verify the current Tanduna task revision and production capabilities.",
+  "tasks": [
+    {
+      "taskKey": "W1-T1",
+      "taskId": "tsk_844482a7d3ba74b1920eca4b9301de86",
+      "taskUrl": "https://tanduna.com/p/matter-commons/tasks/tsk_844482a7d3ba74b1920eca4b9301de86",
+      "title": "Specify the environmental sensor reference",
+      "repositoryUrl": "https://github.com/thepianistdirector/matter-commons",
+      "baseBranch": "main",
+      "planningBaseCommit": "b9379b2ae99f6553039edd9133a62c54b478baa0",
+      "baseMeaning": "Verified planning source containing public skills; not a claim that future prerequisite implementation exists.",
+      "executionGate": "Maintainer accepts the scoped design protocol; this is not product implementation.",
+      "primaryModel": {
+        "provider": "openai",
+        "model": "gpt-6-astra",
+        "effort": "medium"
+      },
+      "fallbackModel": {
+        "provider": "anthropic",
+        "model": "claude-fable-5-1",
+        "effort": "medium"
+      },
+      "requiredSkills": [
+        {
+          "name": "tanduna-contribution",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/context-harbor/a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd/.agents/skills/tanduna-contribution/SKILL.md",
+          "version": "a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd"
+        },
+        {
+          "name": "matter-commons-validation",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/matter-commons/b9379b2ae99f6553039edd9133a62c54b478baa0/.agents/skills/matter-commons-validation/SKILL.md",
+          "version": "b9379b2ae99f6553039edd9133a62c54b478baa0"
+        }
+      ],
+      "acceptanceCriteria": [
+        "Each requirement has a measurable check or is explicitly marked unresolved.",
+        "The reference excludes regulated or safety-critical use and identifies needed physical tests."
+      ],
+      "acceptanceWorkflow": [
+        "Contributor identifies the saved Tanduna task revision, repository/base, accepted prerequisites, selected primary or fallback model and effort, and exact required skill versions.",
+        "Contributor performs the task-specific testing procedure and maps each original acceptance criterion to setup, expected result, observed result and reproducible evidence. Failed and unrun checks remain visible.",
+        "Maintainer reproduces the material checks, reviews the scoped patch or design artifact and verifies the stated model/skill evidence. Unsupported model claims or missing evidence remain unresolved rather than accepted automatically.",
+        "Maintainer records acceptance or requested changes against the reviewed revision. A passing format check, generated patch or completed model invocation does not by itself satisfy the task."
+      ],
+      "testingWorkflow": {
+        "mode": "manual-protocol",
+        "procedure": "Trace the environmental sensor's purpose, dimensions, power and interfaces to measurable requirements. Walk an unresolved requirement and a needed physical test explicitly; keep regulated/safety-critical applications outside this reference.",
+        "baselineCommands": [
+          "git rev-parse HEAD",
+          "git status --short",
+          "git diff --check b9379b2ae99f6553039edd9133a62c54b478baa0"
+        ],
+        "commandLimit": "These existing Git commands verify checkout identity and patch hygiene only. They do not replace functional tests.",
+        "runtimePrerequisite": null,
+        "evidenceLocation": "docs/work/W1-T1/acceptance.md"
+      },
+      "dependsOnTaskKeys": [],
+      "status": "MAINTAINER_CONTRACT_PREPARED_NOT_EXECUTION_APPROVED"
+    },
+    {
+      "taskKey": "W1-T2",
+      "taskId": "tsk_72aeb509f80800724b400b9fe2f0862f",
+      "taskUrl": "https://tanduna.com/p/matter-commons/tasks/tsk_72aeb509f80800724b400b9fe2f0862f",
+      "title": "Model units, tolerances and design lineage",
+      "repositoryUrl": "https://github.com/thepianistdirector/matter-commons",
+      "baseBranch": "main",
+      "planningBaseCommit": "b9379b2ae99f6553039edd9133a62c54b478baa0",
+      "baseMeaning": "Verified planning source containing public skills; not a claim that future prerequisite implementation exists.",
+      "executionGate": "Prerequisite results must be accepted and integrated. Maintainer publishes a new task revision against that integrated base before execution; runtime work also needs the real harness and exact allowed paths.",
+      "primaryModel": {
+        "provider": "openai",
+        "model": "gpt-6-astra",
+        "effort": "high"
+      },
+      "fallbackModel": {
+        "provider": "anthropic",
+        "model": "claude-fable-5-1",
+        "effort": "high"
+      },
+      "requiredSkills": [
+        {
+          "name": "tanduna-contribution",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/context-harbor/a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd/.agents/skills/tanduna-contribution/SKILL.md",
+          "version": "a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd"
+        },
+        {
+          "name": "matter-commons-validation",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/matter-commons/b9379b2ae99f6553039edd9133a62c54b478baa0/.agents/skills/matter-commons-validation/SKILL.md",
+          "version": "b9379b2ae99f6553039edd9133a62c54b478baa0"
+        }
+      ],
+      "acceptanceCriteria": [
+        "A unit mismatch and a conflicting clearance requirement are detected in fixtures.",
+        "Every critical dimension links to its requirement or stated assumption."
+      ],
+      "acceptanceWorkflow": [
+        "Contributor identifies the saved Tanduna task revision, repository/base, accepted prerequisites, selected primary or fallback model and effort, and exact required skill versions.",
+        "Contributor performs the task-specific testing procedure and maps each original acceptance criterion to setup, expected result, observed result and reproducible evidence. Failed and unrun checks remain visible.",
+        "Maintainer reproduces the material checks, reviews the scoped patch or design artifact and verifies the stated model/skill evidence. Unsupported model claims or missing evidence remain unresolved rather than accepted automatically.",
+        "Maintainer records acceptance or requested changes against the reviewed revision. A passing format check, generated patch or completed model invocation does not by itself satisfy the task."
+      ],
+      "testingWorkflow": {
+        "mode": "repository-harness-and-runtime",
+        "procedure": "Create enclosure, board and BOM records with shared IDs, units and tolerances. Introduce a unit mismatch and conflicting clearance; verify each is detected and traced to its requirement or assumption.",
+        "baselineCommands": [
+          "git rev-parse HEAD",
+          "git status --short",
+          "git diff --check b9379b2ae99f6553039edd9133a62c54b478baa0"
+        ],
+        "commandLimit": "These existing Git commands verify checkout identity and patch hygiene only. They do not replace functional tests.",
+        "runtimePrerequisite": "Exact functional commands, fixtures and paths must be ratified in the execution revision once the prerequisite-selected stack/harness exists. Do not claim these future checks ran.",
+        "evidenceLocation": "docs/work/W1-T2/acceptance.md"
+      },
+      "dependsOnTaskKeys": [
+        "W1-T1"
+      ],
+      "status": "MAINTAINER_CONTRACT_PREPARED_NOT_EXECUTION_APPROVED"
+    },
+    {
+      "taskKey": "W2-T1",
+      "taskId": "tsk_7515997808194137220647fb2553cc2a",
+      "taskUrl": "https://tanduna.com/p/matter-commons/tasks/tsk_7515997808194137220647fb2553cc2a",
+      "title": "Build the mechanical design adapter",
+      "repositoryUrl": "https://github.com/thepianistdirector/matter-commons",
+      "baseBranch": "main",
+      "planningBaseCommit": "b9379b2ae99f6553039edd9133a62c54b478baa0",
+      "baseMeaning": "Verified planning source containing public skills; not a claim that future prerequisite implementation exists.",
+      "executionGate": "Prerequisite results must be accepted and integrated. Maintainer publishes a new task revision against that integrated base before execution; runtime work also needs the real harness and exact allowed paths.",
+      "primaryModel": {
+        "provider": "openai",
+        "model": "gpt-6-astra",
+        "effort": "high"
+      },
+      "fallbackModel": {
+        "provider": "anthropic",
+        "model": "claude-fable-5-1",
+        "effort": "high"
+      },
+      "requiredSkills": [
+        {
+          "name": "tanduna-contribution",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/context-harbor/a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd/.agents/skills/tanduna-contribution/SKILL.md",
+          "version": "a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd"
+        },
+        {
+          "name": "matter-commons-validation",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/matter-commons/b9379b2ae99f6553039edd9133a62c54b478baa0/.agents/skills/matter-commons-validation/SKILL.md",
+          "version": "b9379b2ae99f6553039edd9133a62c54b478baa0"
+        }
+      ],
+      "acceptanceCriteria": [
+        "Changing a declared dimension regenerates editable geometry and drawings.",
+        "Unsupported geometry operations fail without replacing the source with an opaque render."
+      ],
+      "acceptanceWorkflow": [
+        "Contributor identifies the saved Tanduna task revision, repository/base, accepted prerequisites, selected primary or fallback model and effort, and exact required skill versions.",
+        "Contributor performs the task-specific testing procedure and maps each original acceptance criterion to setup, expected result, observed result and reproducible evidence. Failed and unrun checks remain visible.",
+        "Maintainer reproduces the material checks, reviews the scoped patch or design artifact and verifies the stated model/skill evidence. Unsupported model claims or missing evidence remain unresolved rather than accepted automatically.",
+        "Maintainer records acceptance or requested changes against the reviewed revision. A passing format check, generated patch or completed model invocation does not by itself satisfy the task."
+      ],
+      "testingWorkflow": {
+        "mode": "repository-harness-and-runtime",
+        "procedure": "Change a supported enclosure dimension and regenerate editable geometry/drawings in the chosen tool. Attempt an unsupported operation; preserve source and report the limit rather than replacing it with a render.",
+        "baselineCommands": [
+          "git rev-parse HEAD",
+          "git status --short",
+          "git diff --check b9379b2ae99f6553039edd9133a62c54b478baa0"
+        ],
+        "commandLimit": "These existing Git commands verify checkout identity and patch hygiene only. They do not replace functional tests.",
+        "runtimePrerequisite": "Exact functional commands, fixtures and paths must be ratified in the execution revision once the prerequisite-selected stack/harness exists. Do not claim these future checks ran.",
+        "evidenceLocation": "docs/work/W2-T1/acceptance.md"
+      },
+      "dependsOnTaskKeys": [
+        "W1-T1",
+        "W1-T2"
+      ],
+      "status": "MAINTAINER_CONTRACT_PREPARED_NOT_EXECUTION_APPROVED"
+    },
+    {
+      "taskKey": "W2-T2",
+      "taskId": "tsk_288e661272c62349ef72954ef671a889",
+      "taskUrl": "https://tanduna.com/p/matter-commons/tasks/tsk_288e661272c62349ef72954ef671a889",
+      "title": "Build the board and BOM adapter",
+      "repositoryUrl": "https://github.com/thepianistdirector/matter-commons",
+      "baseBranch": "main",
+      "planningBaseCommit": "b9379b2ae99f6553039edd9133a62c54b478baa0",
+      "baseMeaning": "Verified planning source containing public skills; not a claim that future prerequisite implementation exists.",
+      "executionGate": "Prerequisite results must be accepted and integrated. Maintainer publishes a new task revision against that integrated base before execution; runtime work also needs the real harness and exact allowed paths.",
+      "primaryModel": {
+        "provider": "openai",
+        "model": "gpt-6-astra",
+        "effort": "high"
+      },
+      "fallbackModel": {
+        "provider": "anthropic",
+        "model": "claude-fable-5-1",
+        "effort": "high"
+      },
+      "requiredSkills": [
+        {
+          "name": "tanduna-contribution",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/context-harbor/a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd/.agents/skills/tanduna-contribution/SKILL.md",
+          "version": "a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd"
+        },
+        {
+          "name": "matter-commons-validation",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/matter-commons/b9379b2ae99f6553039edd9133a62c54b478baa0/.agents/skills/matter-commons-validation/SKILL.md",
+          "version": "b9379b2ae99f6553039edd9133a62c54b478baa0"
+        }
+      ],
+      "acceptanceCriteria": [
+        "Component identifiers remain consistent across schematic, board and BOM.",
+        "A missing or incompatible component is visible before export."
+      ],
+      "acceptanceWorkflow": [
+        "Contributor identifies the saved Tanduna task revision, repository/base, accepted prerequisites, selected primary or fallback model and effort, and exact required skill versions.",
+        "Contributor performs the task-specific testing procedure and maps each original acceptance criterion to setup, expected result, observed result and reproducible evidence. Failed and unrun checks remain visible.",
+        "Maintainer reproduces the material checks, reviews the scoped patch or design artifact and verifies the stated model/skill evidence. Unsupported model claims or missing evidence remain unresolved rather than accepted automatically.",
+        "Maintainer records acceptance or requested changes against the reviewed revision. A passing format check, generated patch or completed model invocation does not by itself satisfy the task."
+      ],
+      "testingWorkflow": {
+        "mode": "repository-harness-and-runtime",
+        "procedure": "Edit a component and inspect schematic, board and BOM identifiers. Remove or substitute an incompatible component and verify the issue is visible before producing reviewed export files.",
+        "baselineCommands": [
+          "git rev-parse HEAD",
+          "git status --short",
+          "git diff --check b9379b2ae99f6553039edd9133a62c54b478baa0"
+        ],
+        "commandLimit": "These existing Git commands verify checkout identity and patch hygiene only. They do not replace functional tests.",
+        "runtimePrerequisite": "Exact functional commands, fixtures and paths must be ratified in the execution revision once the prerequisite-selected stack/harness exists. Do not claim these future checks ran.",
+        "evidenceLocation": "docs/work/W2-T2/acceptance.md"
+      },
+      "dependsOnTaskKeys": [
+        "W1-T1",
+        "W1-T2"
+      ],
+      "status": "MAINTAINER_CONTRACT_PREPARED_NOT_EXECUTION_APPROVED"
+    },
+    {
+      "taskKey": "W3-T1",
+      "taskId": "tsk_99da06268bc0438f806392421ee44b32",
+      "taskUrl": "https://tanduna.com/p/matter-commons/tasks/tsk_99da06268bc0438f806392421ee44b32",
+      "title": "Implement board-to-case fit verification",
+      "repositoryUrl": "https://github.com/thepianistdirector/matter-commons",
+      "baseBranch": "main",
+      "planningBaseCommit": "b9379b2ae99f6553039edd9133a62c54b478baa0",
+      "baseMeaning": "Verified planning source containing public skills; not a claim that future prerequisite implementation exists.",
+      "executionGate": "Prerequisite results must be accepted and integrated. Maintainer publishes a new task revision against that integrated base before execution; runtime work also needs the real harness and exact allowed paths.",
+      "primaryModel": {
+        "provider": "openai",
+        "model": "gpt-6-astra",
+        "effort": "high"
+      },
+      "fallbackModel": {
+        "provider": "anthropic",
+        "model": "claude-fable-5-1",
+        "effort": "high"
+      },
+      "requiredSkills": [
+        {
+          "name": "tanduna-contribution",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/context-harbor/a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd/.agents/skills/tanduna-contribution/SKILL.md",
+          "version": "a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd"
+        },
+        {
+          "name": "matter-commons-validation",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/matter-commons/b9379b2ae99f6553039edd9133a62c54b478baa0/.agents/skills/matter-commons-validation/SKILL.md",
+          "version": "b9379b2ae99f6553039edd9133a62c54b478baa0"
+        }
+      ],
+      "acceptanceCriteria": [
+        "A deliberately oversized board or displaced hole fails the check.",
+        "Results disclose tolerances and what geometry is not covered."
+      ],
+      "acceptanceWorkflow": [
+        "Contributor identifies the saved Tanduna task revision, repository/base, accepted prerequisites, selected primary or fallback model and effort, and exact required skill versions.",
+        "Contributor performs the task-specific testing procedure and maps each original acceptance criterion to setup, expected result, observed result and reproducible evidence. Failed and unrun checks remain visible.",
+        "Maintainer reproduces the material checks, reviews the scoped patch or design artifact and verifies the stated model/skill evidence. Unsupported model claims or missing evidence remain unresolved rather than accepted automatically.",
+        "Maintainer records acceptance or requested changes against the reviewed revision. A passing format check, generated patch or completed model invocation does not by itself satisfy the task."
+      ],
+      "testingWorkflow": {
+        "mode": "repository-harness-and-runtime",
+        "procedure": "Check the reference board/case fit, then oversize the board and displace a mounting hole. Verify both counterexamples fail and record tolerances and geometry excluded from the calculation.",
+        "baselineCommands": [
+          "git rev-parse HEAD",
+          "git status --short",
+          "git diff --check b9379b2ae99f6553039edd9133a62c54b478baa0"
+        ],
+        "commandLimit": "These existing Git commands verify checkout identity and patch hygiene only. They do not replace functional tests.",
+        "runtimePrerequisite": "Exact functional commands, fixtures and paths must be ratified in the execution revision once the prerequisite-selected stack/harness exists. Do not claim these future checks ran.",
+        "evidenceLocation": "docs/work/W3-T1/acceptance.md"
+      },
+      "dependsOnTaskKeys": [
+        "W2-T1",
+        "W2-T2"
+      ],
+      "status": "MAINTAINER_CONTRACT_PREPARED_NOT_EXECUTION_APPROVED"
+    },
+    {
+      "taskKey": "W3-T2",
+      "taskId": "tsk_d1f50ac1ef1f4a60d83f60fbd91ae689",
+      "taskUrl": "https://tanduna.com/p/matter-commons/tasks/tsk_d1f50ac1ef1f4a60d83f60fbd91ae689",
+      "title": "Implement proposed design changes",
+      "repositoryUrl": "https://github.com/thepianistdirector/matter-commons",
+      "baseBranch": "main",
+      "planningBaseCommit": "b9379b2ae99f6553039edd9133a62c54b478baa0",
+      "baseMeaning": "Verified planning source containing public skills; not a claim that future prerequisite implementation exists.",
+      "executionGate": "Prerequisite results must be accepted and integrated. Maintainer publishes a new task revision against that integrated base before execution; runtime work also needs the real harness and exact allowed paths.",
+      "primaryModel": {
+        "provider": "openai",
+        "model": "gpt-6-astra",
+        "effort": "high"
+      },
+      "fallbackModel": {
+        "provider": "anthropic",
+        "model": "claude-fable-5-1",
+        "effort": "high"
+      },
+      "requiredSkills": [
+        {
+          "name": "tanduna-contribution",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/context-harbor/a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd/.agents/skills/tanduna-contribution/SKILL.md",
+          "version": "a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd"
+        },
+        {
+          "name": "matter-commons-validation",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/matter-commons/b9379b2ae99f6553039edd9133a62c54b478baa0/.agents/skills/matter-commons-validation/SKILL.md",
+          "version": "b9379b2ae99f6553039edd9133a62c54b478baa0"
+        }
+      ],
+      "acceptanceCriteria": [
+        "A reviewer sees which dimensions, components, drawings and costs may change.",
+        "Rejected changes leave the accepted design package intact."
+      ],
+      "acceptanceWorkflow": [
+        "Contributor identifies the saved Tanduna task revision, repository/base, accepted prerequisites, selected primary or fallback model and effort, and exact required skill versions.",
+        "Contributor performs the task-specific testing procedure and maps each original acceptance criterion to setup, expected result, observed result and reproducible evidence. Failed and unrun checks remain visible.",
+        "Maintainer reproduces the material checks, reviews the scoped patch or design artifact and verifies the stated model/skill evidence. Unsupported model claims or missing evidence remain unresolved rather than accepted automatically.",
+        "Maintainer records acceptance or requested changes against the reviewed revision. A passing format check, generated patch or completed model invocation does not by itself satisfy the task."
+      ],
+      "testingWorkflow": {
+        "mode": "repository-harness-and-runtime",
+        "procedure": "Propose a typed dimension or component change and inspect affected geometry, drawing and BOM. Reject it and confirm the accepted package remains intact; repeat with a conflicting requirement.",
+        "baselineCommands": [
+          "git rev-parse HEAD",
+          "git status --short",
+          "git diff --check b9379b2ae99f6553039edd9133a62c54b478baa0"
+        ],
+        "commandLimit": "These existing Git commands verify checkout identity and patch hygiene only. They do not replace functional tests.",
+        "runtimePrerequisite": "Exact functional commands, fixtures and paths must be ratified in the execution revision once the prerequisite-selected stack/harness exists. Do not claim these future checks ran.",
+        "evidenceLocation": "docs/work/W3-T2/acceptance.md"
+      },
+      "dependsOnTaskKeys": [
+        "W2-T1",
+        "W2-T2"
+      ],
+      "status": "MAINTAINER_CONTRACT_PREPARED_NOT_EXECUTION_APPROVED"
+    },
+    {
+      "taskKey": "W4-T1",
+      "taskId": "tsk_56826ef304acef919a2dd2af0a1dee83",
+      "taskUrl": "https://tanduna.com/p/matter-commons/tasks/tsk_56826ef304acef919a2dd2af0a1dee83",
+      "title": "Add a bounded simulation recipe",
+      "repositoryUrl": "https://github.com/thepianistdirector/matter-commons",
+      "baseBranch": "main",
+      "planningBaseCommit": "b9379b2ae99f6553039edd9133a62c54b478baa0",
+      "baseMeaning": "Verified planning source containing public skills; not a claim that future prerequisite implementation exists.",
+      "executionGate": "Prerequisite results must be accepted and integrated. Maintainer publishes a new task revision against that integrated base before execution; runtime work also needs the real harness and exact allowed paths.",
+      "primaryModel": {
+        "provider": "openai",
+        "model": "gpt-6-astra",
+        "effort": "high"
+      },
+      "fallbackModel": {
+        "provider": "anthropic",
+        "model": "claude-fable-5-1",
+        "effort": "high"
+      },
+      "requiredSkills": [
+        {
+          "name": "tanduna-contribution",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/context-harbor/a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd/.agents/skills/tanduna-contribution/SKILL.md",
+          "version": "a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd"
+        },
+        {
+          "name": "matter-commons-validation",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/matter-commons/b9379b2ae99f6553039edd9133a62c54b478baa0/.agents/skills/matter-commons-validation/SKILL.md",
+          "version": "b9379b2ae99f6553039edd9133a62c54b478baa0"
+        }
+      ],
+      "acceptanceCriteria": [
+        "The recipe includes a reference case with a known expected result.",
+        "Reports separate simulated estimates from measured physical performance."
+      ],
+      "acceptanceWorkflow": [
+        "Contributor identifies the saved Tanduna task revision, repository/base, accepted prerequisites, selected primary or fallback model and effort, and exact required skill versions.",
+        "Contributor performs the task-specific testing procedure and maps each original acceptance criterion to setup, expected result, observed result and reproducible evidence. Failed and unrun checks remain visible.",
+        "Maintainer reproduces the material checks, reviews the scoped patch or design artifact and verifies the stated model/skill evidence. Unsupported model claims or missing evidence remain unresolved rather than accepted automatically.",
+        "Maintainer records acceptance or requested changes against the reviewed revision. A passing format check, generated patch or completed model invocation does not by itself satisfy the task."
+      ],
+      "testingWorkflow": {
+        "mode": "repository-harness-and-runtime",
+        "procedure": "Run the chosen solver recipe on a known reference case, then a changed parameter within its supported range. Report assumptions and error/solver limits; label results as simulated rather than physically measured.",
+        "baselineCommands": [
+          "git rev-parse HEAD",
+          "git status --short",
+          "git diff --check b9379b2ae99f6553039edd9133a62c54b478baa0"
+        ],
+        "commandLimit": "These existing Git commands verify checkout identity and patch hygiene only. They do not replace functional tests.",
+        "runtimePrerequisite": "Exact functional commands, fixtures and paths must be ratified in the execution revision once the prerequisite-selected stack/harness exists. Do not claim these future checks ran.",
+        "evidenceLocation": "docs/work/W4-T1/acceptance.md"
+      },
+      "dependsOnTaskKeys": [
+        "W3-T1",
+        "W3-T2"
+      ],
+      "status": "MAINTAINER_CONTRACT_PREPARED_NOT_EXECUTION_APPROVED"
+    },
+    {
+      "taskKey": "W4-T2",
+      "taskId": "tsk_6639dc4c19223b704536a821aef915e8",
+      "taskUrl": "https://tanduna.com/p/matter-commons/tasks/tsk_6639dc4c19223b704536a821aef915e8",
+      "title": "Prepare and document a physical prototype",
+      "repositoryUrl": "https://github.com/thepianistdirector/matter-commons",
+      "baseBranch": "main",
+      "planningBaseCommit": "b9379b2ae99f6553039edd9133a62c54b478baa0",
+      "baseMeaning": "Verified planning source containing public skills; not a claim that future prerequisite implementation exists.",
+      "executionGate": "Prerequisite results must be accepted and integrated. Maintainer publishes a new task revision against that integrated base before execution; runtime work also needs the real harness and exact allowed paths.",
+      "primaryModel": {
+        "provider": "openai",
+        "model": "gpt-6-astra",
+        "effort": "high"
+      },
+      "fallbackModel": {
+        "provider": "anthropic",
+        "model": "claude-fable-5-1",
+        "effort": "high"
+      },
+      "requiredSkills": [
+        {
+          "name": "tanduna-contribution",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/context-harbor/a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd/.agents/skills/tanduna-contribution/SKILL.md",
+          "version": "a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd"
+        },
+        {
+          "name": "matter-commons-validation",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/matter-commons/b9379b2ae99f6553039edd9133a62c54b478baa0/.agents/skills/matter-commons-validation/SKILL.md",
+          "version": "b9379b2ae99f6553039edd9133a62c54b478baa0"
+        }
+      ],
+      "acceptanceCriteria": [
+        "Build outputs include versioned drawings, BOM and assembly notes.",
+        "Any physical results name the actual revision, equipment and observed limitations."
+      ],
+      "acceptanceWorkflow": [
+        "Contributor identifies the saved Tanduna task revision, repository/base, accepted prerequisites, selected primary or fallback model and effort, and exact required skill versions.",
+        "Contributor performs the task-specific testing procedure and maps each original acceptance criterion to setup, expected result, observed result and reproducible evidence. Failed and unrun checks remain visible.",
+        "Maintainer reproduces the material checks, reviews the scoped patch or design artifact and verifies the stated model/skill evidence. Unsupported model claims or missing evidence remain unresolved rather than accepted automatically.",
+        "Maintainer records acceptance or requested changes against the reviewed revision. A passing format check, generated patch or completed model invocation does not by itself satisfy the task."
+      ],
+      "testingWorkflow": {
+        "mode": "manual-protocol",
+        "procedure": "Review versioned drawings, BOM, assembly notes and a physical test procedure. If separately resourced fabrication occurs, record the actual built revision, equipment, measured results and discrepancies; otherwise mark physical tests NOT RUN.",
+        "baselineCommands": [
+          "git rev-parse HEAD",
+          "git status --short",
+          "git diff --check b9379b2ae99f6553039edd9133a62c54b478baa0"
+        ],
+        "commandLimit": "These existing Git commands verify checkout identity and patch hygiene only. They do not replace functional tests.",
+        "runtimePrerequisite": null,
+        "evidenceLocation": "docs/work/W4-T2/acceptance.md"
+      },
+      "dependsOnTaskKeys": [
+        "W3-T1",
+        "W3-T2"
+      ],
+      "status": "MAINTAINER_CONTRACT_PREPARED_NOT_EXECUTION_APPROVED"
+    },
+    {
+      "taskKey": "W5-T1",
+      "taskId": "tsk_237d1500c3c6c9387062ffc3ed44e937",
+      "taskUrl": "https://tanduna.com/p/matter-commons/tasks/tsk_237d1500c3c6c9387062ffc3ed44e937",
+      "title": "Publish the open design package format",
+      "repositoryUrl": "https://github.com/thepianistdirector/matter-commons",
+      "baseBranch": "main",
+      "planningBaseCommit": "b9379b2ae99f6553039edd9133a62c54b478baa0",
+      "baseMeaning": "Verified planning source containing public skills; not a claim that future prerequisite implementation exists.",
+      "executionGate": "Prerequisite results must be accepted and integrated. Maintainer publishes a new task revision against that integrated base before execution; runtime work also needs the real harness and exact allowed paths.",
+      "primaryModel": {
+        "provider": "openai",
+        "model": "gpt-6-astra",
+        "effort": "high"
+      },
+      "fallbackModel": {
+        "provider": "anthropic",
+        "model": "claude-fable-5-1",
+        "effort": "high"
+      },
+      "requiredSkills": [
+        {
+          "name": "tanduna-contribution",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/context-harbor/a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd/.agents/skills/tanduna-contribution/SKILL.md",
+          "version": "a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd"
+        },
+        {
+          "name": "matter-commons-validation",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/matter-commons/b9379b2ae99f6553039edd9133a62c54b478baa0/.agents/skills/matter-commons-validation/SKILL.md",
+          "version": "b9379b2ae99f6553039edd9133a62c54b478baa0"
+        }
+      ],
+      "acceptanceCriteria": [
+        "Another contributor reopens and edits the reference design without private files.",
+        "Missing tool versions or components are diagnosed clearly."
+      ],
+      "acceptanceWorkflow": [
+        "Contributor identifies the saved Tanduna task revision, repository/base, accepted prerequisites, selected primary or fallback model and effort, and exact required skill versions.",
+        "Contributor performs the task-specific testing procedure and maps each original acceptance criterion to setup, expected result, observed result and reproducible evidence. Failed and unrun checks remain visible.",
+        "Maintainer reproduces the material checks, reviews the scoped patch or design artifact and verifies the stated model/skill evidence. Unsupported model claims or missing evidence remain unresolved rather than accepted automatically.",
+        "Maintainer records acceptance or requested changes against the reviewed revision. A passing format check, generated patch or completed model invocation does not by itself satisfy the task."
+      ],
+      "testingWorkflow": {
+        "mode": "repository-harness-and-runtime",
+        "procedure": "Have another contributor reopen and edit the exported design with only public files. Remove a tool version or component reference and verify a clear diagnostic; check artifact and license metadata preservation.",
+        "baselineCommands": [
+          "git rev-parse HEAD",
+          "git status --short",
+          "git diff --check b9379b2ae99f6553039edd9133a62c54b478baa0"
+        ],
+        "commandLimit": "These existing Git commands verify checkout identity and patch hygiene only. They do not replace functional tests.",
+        "runtimePrerequisite": "Exact functional commands, fixtures and paths must be ratified in the execution revision once the prerequisite-selected stack/harness exists. Do not claim these future checks ran.",
+        "evidenceLocation": "docs/work/W5-T1/acceptance.md"
+      },
+      "dependsOnTaskKeys": [
+        "W4-T1",
+        "W4-T2"
+      ],
+      "status": "MAINTAINER_CONTRACT_PREPARED_NOT_EXECUTION_APPROVED"
+    },
+    {
+      "taskKey": "W5-T2",
+      "taskId": "tsk_47370c84415d73d90ef0ea9b23fe7d1f",
+      "taskUrl": "https://tanduna.com/p/matter-commons/tasks/tsk_47370c84415d73d90ef0ea9b23fe7d1f",
+      "title": "Build review and component contribution flows",
+      "repositoryUrl": "https://github.com/thepianistdirector/matter-commons",
+      "baseBranch": "main",
+      "planningBaseCommit": "b9379b2ae99f6553039edd9133a62c54b478baa0",
+      "baseMeaning": "Verified planning source containing public skills; not a claim that future prerequisite implementation exists.",
+      "executionGate": "Prerequisite results must be accepted and integrated. Maintainer publishes a new task revision against that integrated base before execution; runtime work also needs the real harness and exact allowed paths.",
+      "primaryModel": {
+        "provider": "openai",
+        "model": "gpt-6-astra",
+        "effort": "high"
+      },
+      "fallbackModel": {
+        "provider": "anthropic",
+        "model": "claude-fable-5-1",
+        "effort": "high"
+      },
+      "requiredSkills": [
+        {
+          "name": "tanduna-contribution",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/context-harbor/a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd/.agents/skills/tanduna-contribution/SKILL.md",
+          "version": "a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd"
+        },
+        {
+          "name": "matter-commons-validation",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/matter-commons/b9379b2ae99f6553039edd9133a62c54b478baa0/.agents/skills/matter-commons-validation/SKILL.md",
+          "version": "b9379b2ae99f6553039edd9133a62c54b478baa0"
+        }
+      ],
+      "acceptanceCriteria": [
+        "A component record distinguishes datasheet claims from community measurements.",
+        "Review preserves attribution and prevents incompatible licenses from being silently combined."
+      ],
+      "acceptanceWorkflow": [
+        "Contributor identifies the saved Tanduna task revision, repository/base, accepted prerequisites, selected primary or fallback model and effort, and exact required skill versions.",
+        "Contributor performs the task-specific testing procedure and maps each original acceptance criterion to setup, expected result, observed result and reproducible evidence. Failed and unrun checks remain visible.",
+        "Maintainer reproduces the material checks, reviews the scoped patch or design artifact and verifies the stated model/skill evidence. Unsupported model claims or missing evidence remain unresolved rather than accepted automatically.",
+        "Maintainer records acceptance or requested changes against the reviewed revision. A passing format check, generated patch or completed model invocation does not by itself satisfy the task."
+      ],
+      "testingWorkflow": {
+        "mode": "repository-harness-and-runtime",
+        "procedure": "Submit a component with separate datasheet claims and measured values, review it, then reject an incompatible-license or untraceable variant. Confirm attribution and accepted design records remain intact.",
+        "baselineCommands": [
+          "git rev-parse HEAD",
+          "git status --short",
+          "git diff --check b9379b2ae99f6553039edd9133a62c54b478baa0"
+        ],
+        "commandLimit": "These existing Git commands verify checkout identity and patch hygiene only. They do not replace functional tests.",
+        "runtimePrerequisite": "Exact functional commands, fixtures and paths must be ratified in the execution revision once the prerequisite-selected stack/harness exists. Do not claim these future checks ran.",
+        "evidenceLocation": "docs/work/W5-T2/acceptance.md"
+      },
+      "dependsOnTaskKeys": [
+        "W4-T1",
+        "W4-T2"
+      ],
+      "status": "MAINTAINER_CONTRACT_PREPARED_NOT_EXECUTION_APPROVED"
+    },
+    {
+      "taskKey": "W6-T1",
+      "taskId": "tsk_ee1fb80ba97d9d7e89f90720fcea07d3",
+      "taskUrl": "https://tanduna.com/p/matter-commons/tasks/tsk_ee1fb80ba97d9d7e89f90720fcea07d3",
+      "title": "Run independent reproduction exercises",
+      "repositoryUrl": "https://github.com/thepianistdirector/matter-commons",
+      "baseBranch": "main",
+      "planningBaseCommit": "b9379b2ae99f6553039edd9133a62c54b478baa0",
+      "baseMeaning": "Verified planning source containing public skills; not a claim that future prerequisite implementation exists.",
+      "executionGate": "Prerequisite results must be accepted and integrated. Maintainer publishes a new task revision against that integrated base before execution; runtime work also needs the real harness and exact allowed paths.",
+      "primaryModel": {
+        "provider": "openai",
+        "model": "gpt-6-astra",
+        "effort": "high"
+      },
+      "fallbackModel": {
+        "provider": "anthropic",
+        "model": "claude-fable-5-1",
+        "effort": "high"
+      },
+      "requiredSkills": [
+        {
+          "name": "tanduna-contribution",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/context-harbor/a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd/.agents/skills/tanduna-contribution/SKILL.md",
+          "version": "a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd"
+        },
+        {
+          "name": "matter-commons-validation",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/matter-commons/b9379b2ae99f6553039edd9133a62c54b478baa0/.agents/skills/matter-commons-validation/SKILL.md",
+          "version": "b9379b2ae99f6553039edd9133a62c54b478baa0"
+        }
+      ],
+      "acceptanceCriteria": [
+        "Report discrepancies and failed reproductions alongside successful ones.",
+        "Update requirements or adapters using measured findings."
+      ],
+      "acceptanceWorkflow": [
+        "Contributor identifies the saved Tanduna task revision, repository/base, accepted prerequisites, selected primary or fallback model and effort, and exact required skill versions.",
+        "Contributor performs the task-specific testing procedure and maps each original acceptance criterion to setup, expected result, observed result and reproducible evidence. Failed and unrun checks remain visible.",
+        "Maintainer reproduces the material checks, reviews the scoped patch or design artifact and verifies the stated model/skill evidence. Unsupported model claims or missing evidence remain unresolved rather than accepted automatically.",
+        "Maintainer records acceptance or requested changes against the reviewed revision. A passing format check, generated patch or completed model invocation does not by itself satisfy the task."
+      ],
+      "testingWorkflow": {
+        "mode": "manual-protocol",
+        "procedure": "Have independent volunteer teams reproduce the model and any separately resourced physical check. Publish failed as well as successful reproduction findings and trace resulting requirement/adapter revisions.",
+        "baselineCommands": [
+          "git rev-parse HEAD",
+          "git status --short",
+          "git diff --check b9379b2ae99f6553039edd9133a62c54b478baa0"
+        ],
+        "commandLimit": "These existing Git commands verify checkout identity and patch hygiene only. They do not replace functional tests.",
+        "runtimePrerequisite": null,
+        "evidenceLocation": "docs/work/W6-T1/acceptance.md"
+      },
+      "dependsOnTaskKeys": [
+        "W5-T1",
+        "W5-T2"
+      ],
+      "status": "MAINTAINER_CONTRACT_PREPARED_NOT_EXECUTION_APPROVED"
+    },
+    {
+      "taskKey": "W6-T2",
+      "taskId": "tsk_066cdcae5dd43c8820f1034f4e689249",
+      "taskUrl": "https://tanduna.com/p/matter-commons/tasks/tsk_066cdcae5dd43c8820f1034f4e689249",
+      "title": "Publish supported workflows and adapter conformance",
+      "repositoryUrl": "https://github.com/thepianistdirector/matter-commons",
+      "baseBranch": "main",
+      "planningBaseCommit": "b9379b2ae99f6553039edd9133a62c54b478baa0",
+      "baseMeaning": "Verified planning source containing public skills; not a claim that future prerequisite implementation exists.",
+      "executionGate": "Prerequisite results must be accepted and integrated. Maintainer publishes a new task revision against that integrated base before execution; runtime work also needs the real harness and exact allowed paths.",
+      "primaryModel": {
+        "provider": "openai",
+        "model": "gpt-6-astra",
+        "effort": "high"
+      },
+      "fallbackModel": {
+        "provider": "anthropic",
+        "model": "claude-fable-5-1",
+        "effort": "high"
+      },
+      "requiredSkills": [
+        {
+          "name": "tanduna-contribution",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/context-harbor/a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd/.agents/skills/tanduna-contribution/SKILL.md",
+          "version": "a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd"
+        },
+        {
+          "name": "matter-commons-validation",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/matter-commons/b9379b2ae99f6553039edd9133a62c54b478baa0/.agents/skills/matter-commons-validation/SKILL.md",
+          "version": "b9379b2ae99f6553039edd9133a62c54b478baa0"
+        }
+      ],
+      "acceptanceCriteria": [
+        "A second design exercises the same adapters without custom core changes.",
+        "Support claims state geometry, electronics and simulation limits explicitly."
+      ],
+      "acceptanceWorkflow": [
+        "Contributor identifies the saved Tanduna task revision, repository/base, accepted prerequisites, selected primary or fallback model and effort, and exact required skill versions.",
+        "Contributor performs the task-specific testing procedure and maps each original acceptance criterion to setup, expected result, observed result and reproducible evidence. Failed and unrun checks remain visible.",
+        "Maintainer reproduces the material checks, reviews the scoped patch or design artifact and verifies the stated model/skill evidence. Unsupported model claims or missing evidence remain unresolved rather than accepted automatically.",
+        "Maintainer records acceptance or requested changes against the reviewed revision. A passing format check, generated patch or completed model invocation does not by itself satisfy the task."
+      ],
+      "testingWorkflow": {
+        "mode": "repository-harness-and-runtime",
+        "procedure": "Run a second bounded design through the same maintained adapters and conformance checks. Include an unsupported geometry/electronics/solver case and state the actual supported versions and limits.",
+        "baselineCommands": [
+          "git rev-parse HEAD",
+          "git status --short",
+          "git diff --check b9379b2ae99f6553039edd9133a62c54b478baa0"
+        ],
+        "commandLimit": "These existing Git commands verify checkout identity and patch hygiene only. They do not replace functional tests.",
+        "runtimePrerequisite": "Exact functional commands, fixtures and paths must be ratified in the execution revision once the prerequisite-selected stack/harness exists. Do not claim these future checks ran.",
+        "evidenceLocation": "docs/work/W6-T2/acceptance.md"
+      },
+      "dependsOnTaskKeys": [
+        "W5-T1",
+        "W5-T2"
+      ],
+      "status": "MAINTAINER_CONTRACT_PREPARED_NOT_EXECUTION_APPROVED"
+    }
+  ]
+}

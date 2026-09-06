@@ -36,16 +36,19 @@ Mechanical engineers, electronics designers, firmware developers, simulation spe
 
 We are looking for founding maintainers and contributors who can make one small, reviewable part real. Bring a concrete use case, a difficult test case, an interface sketch or a focused patch. If you use a coding agent, give it one agreed task and review its result. Accepted work matters more than generated volume.
 
-## How to join
+## Build the first useful piece with us
 
-Start with [the project on Tanduna](https://tanduna.com/projects/matter-commons). Read the [six-wave roadmap](ROADMAP.md) and [twelve proposed tasks](TASKS.md), then join the planning discussion and say which result you can help deliver. Propose scope before starting overlapping implementation. GitHub holds the source; Tanduna is where we organize the project and its community.
+Start with [Matter Commons on Tanduna](https://tanduna.com/projects/matter-commons) and the [first task: Specify the environmental sensor reference](https://tanduna.com/p/matter-commons/tasks/tsk_844482a7d3ba74b1920eca4b9301de86). Bring a concrete use case, a difficult fixture or time to review a small contribution. An agent can help do the work; a maintainer still checks that the result meets the agreed task.
 
-- **W1: One physical design with explicit requirements.** Define a bounded reference device and its assumptions.
-- **W2: Connect established engineering tools.** Create the first editable cross-discipline package.
-- **W3: Prove one useful engineering check.** Make changes reviewable across the package.
-- **W4: From model to measured prototype.** Connect analysis with real-world evidence.
-- **W5: A community can reproduce the design.** Make collaboration and portability dependable.
-- **W6: An engineering ecosystem people can trust.** Validate reproducibility and operator effort.
+1. Pick one task from the [six-wave roadmap](ROADMAP.md) and [twelve task contracts](TASKS.md), then agree its scope and prerequisites.
+2. Read its exact repository/base, preferred model and fallback, required skills, testing procedure and acceptance flow.
+3. Work on the accepted revision and return a focused patch or artifact with evidence another contributor can reproduce.
+
+The first milestone is **One physical design with explicit requirements**: Define a bounded reference device and its assumptions.
+
+The complete [contribution guide](CONTRIBUTING.md) includes two public downloads: the [shared contribution skill](https://raw.githubusercontent.com/thepianistdirector/context-harbor/a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd/.agents/skills/tanduna-contribution/SKILL.md) and [Matter Commons validation skill](https://raw.githubusercontent.com/thepianistdirector/matter-commons/b9379b2ae99f6553039edd9133a62c54b478baa0/.agents/skills/matter-commons-validation/SKILL.md). Both are pinned to exact Git commits. Every task selects GPT-6 Astra or Claude Fable 5.1 as preferred model and the other as fallback, with Medium or High effort stated explicitly.
+
+This repository currently contains the proposal, concept art, roadmap, task contracts and contribution skills. It does not yet contain a working product. Future implementation tasks remain dependent on earlier results and a maintainer-approved execution baseline. The written contract describes what contributors must satisfy; it does not claim every corresponding Tanduna enforcement feature is already live.
 
 ## What we are not promising
 
